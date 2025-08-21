@@ -3,7 +3,7 @@ class Database {
     private $host = "localhost";
     private $db_name = "php_practice";
     private $username = "root";
-    private $password = "mindfire";
+    private $password = "";
     public $conn;
 
     public function getConnection() {
