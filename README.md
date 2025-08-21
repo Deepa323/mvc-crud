@@ -1,4 +1,4 @@
-This is a basic Create, Read, Update, Delete (CRUD) application built in PHP & MySQL.
+This is a basic Create, Read, Update, Delete (CRUD) application built in PHP & MySQL and MVC architecture..
 
 Features
 
