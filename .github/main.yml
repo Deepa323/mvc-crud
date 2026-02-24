@@ -1,0 +1,21 @@
+name: CRUD App CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: List files
+        run: dir
+
+      - name: Copy files using Robocopy
+        run: |
+          robocopy . C:\deploy\mvc-crud /E /XD .git .github /NFL /NDL
+          if ($LASTEXITCODE -le 7) { exit 0 }
