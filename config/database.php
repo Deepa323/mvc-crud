@@ -1,9 +1,9 @@
 <?php
 class Database {
     private $host = "localhost";
-    private $db_name = "php_practice";
-    private $username = "root";
-    private $password = "mindfire";
+    private $db_name = "crud_app";
+    private $username = "cruduser";
+    private $password = "mypassword";
     public $conn;
 
     public function getConnection() {

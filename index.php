@@ -5,7 +5,7 @@ ini_set('display_errors', 1);
 
 require_once "controllers/UserController.php";
 
-$conn = new mysqli("localhost", "root", "", "crud_app");
+$conn = new mysqli("localhost", "cruduser", "mypassword", "crud_app");
 if ($conn->connect_error) {
     die("Database connection failed: " . $conn->connect_error);
 }

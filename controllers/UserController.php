@@ -25,13 +25,13 @@ public function store() {
 
         if (empty($name) || empty($email)) {
             $error = "All fields are required!";
-            include "views/users/add.php";
+            include "views/users/create.php";
             return;
         }
 
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             $error = "Invalid email format!";
-            include "views/users/add.php";
+            include "views/users/create.php";
             return;
         }
 
