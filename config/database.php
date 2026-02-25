@@ -4,6 +4,7 @@ class Database {
     private $db_name = "php_practice";
     private $username = "root";
     private $password = "";
+
     public $conn;
 
     public function getConnection() {
@@ -11,7 +12,7 @@ class Database {
         try {
             $this->conn = new mysqli($this->host, $this->username, $this->password, $this->db_name);
         } catch (Exception $e) {
-            echo "Connection failed: " . $e->getMessage();
+            echo "Failed: " . $e->getMessage();
         }
         return $this->conn;
     }
